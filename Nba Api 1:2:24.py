@@ -15,7 +15,7 @@ class Nba_api:
         #creating max and min to store the max and min season
         self.max = 0
         self.min = 0
-    
+   #function to get the response data 
     def get_response(self):
         url = "https://api-nba-v1.p.rapidapi.com/players/statistics"
         querystring = {"id":str(self.pid),"season":str(self.season)}
@@ -138,55 +138,3 @@ def main():
     plt.show()
     
 main()
-    
-"""
-#make a function for this
-querystring = {"id":str(pid),"season":str(season)} 
-
-headers = {
-	"X-RapidAPI-Key": "caceb7bb59mshd876c225d69680dp139934jsnd0bb9d630083",
-	"X-RapidAPI-Host": "api-nba-v1.p.rapidapi.com"
-}
-
-response = requests.get(url, headers=headers, params=querystring)
-
-player_stats = (response.json()) #it's got buddy hields stats for the 2020 szn
-
-c = player_stats["response"]
-
-
-x = (c[:-1]) # stores 0 to n-1
-"""
-
-
-
-
-    #this is a list where the first index refers to the game,
-    #it fetches the date for that game, so x[0] gets the data for the first game for that player in that szn
-
-
-"""
-Important keywords of stats
-points
-offReb
-defReb
-totReb
-fgm
-fga
-ftm
-fta
-pos
-min
-assists
-steals
-turnovers
-blocks
-plusMinus
-pFouls
-ftp
-"""
-
-#Create a way to find players through user input and fetch stats,
-#nba.com doesn't have the id, use rapidapi page for this api
-#data visualizations for stats, allow comparison btw different players, start with smth basic, ex: pts
-#This uses player id to find players
