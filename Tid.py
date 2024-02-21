@@ -4,8 +4,6 @@ class Tid:
     def __init__(self):
         self.nickname = [] #initializing list to later store nicknames of teams
         self.teamid = [] #initializing list to later store teamid of teams
-        #self.nbaFranchise = [] #initializing list to later store the values of nbaFranchise key
-        #of teams that can be used to check if team is an nba franchise
         self.teams = [] #initializing a list that will be used to store teams
 
     def get_team_id(self, lname):
