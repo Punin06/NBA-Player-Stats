@@ -7,7 +7,8 @@ class Pid:
         self.szn = str(szn) #this is to set the nba season
         self.fname = [] #initializing list to later store first name of players
         self.lname = [] #initializing list to later store last name of players
-        self.temp_fname = ""
+	#placeholder variables to temporarily store the first and last name
+        self.temp_fname = "" 
         self.temp_lname = ""
         self.pid = 0   
     #function to return the player id    
