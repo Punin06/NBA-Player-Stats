@@ -33,17 +33,3 @@ class Tid:
                 #team does not exists, id is set to -1
                 id = -1
         return id
-#Testing if Tid works
-"""
-def main():
-    T = Tid()
-    print(T.get_team_id("Mavericks"))
-main()
-"""
-
-"""
-    temp2 = temp["response"]
-    global teams
-    teams = temp2[:-1]
-    #print(nickname)
- """
