@@ -3,7 +3,7 @@ class Season:
     def __init__(self):
       self.max_season = 0
       self.min_season = 0
-        
+#function to get the response data 
     def get_data(self):
         url = "https://api-nba-v1.p.rapidapi.com/seasons"
         headers = {
