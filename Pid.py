@@ -10,7 +10,7 @@ class Pid:
         self.temp_fname = ""
         self.temp_lname = ""
         self.pid = 0   
-        
+    #function to return the player id    
     def get_player_id(self, player_name):
         url = "https://api-nba-v1.p.rapidapi.com/players"
         querystring = {"team":self.team_id,"season":self.szn}
